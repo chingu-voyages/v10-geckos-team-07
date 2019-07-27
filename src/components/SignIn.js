@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
+import SignUp from './SignUp'
 
-function SignUp() {
+function SignIn() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -43,10 +44,10 @@ function SignUp() {
             </Button>
           </Form>
         </Modal.Body>
-        <Modal.Footer>Don’t have an account?Sign up</Modal.Footer>
+        <Modal.Footer> <p> Don’t have an account?<SignUp /></p></Modal.Footer>
       </Modal>
     </>
   );
 }
 
-export default SignUp;
+export default SignIn;

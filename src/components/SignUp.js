@@ -1,5 +1,6 @@
 import React,  { useState, render } from "react";
 import { Modal, Button } from "react-bootstrap";
+import SignIn from './SignIn'
 
 function SignUp() {
   const [show, setShow] = useState(false);
@@ -27,7 +28,7 @@ function SignUp() {
           </Button>
           </Modal.Body>
         <Modal.Footer>
-        Already have an  account? Log in
+        Already have an account? <SignIn />. 
         </Modal.Footer>
       </Modal>
     </>
