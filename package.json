@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.11.0",
-    "@typescript-eslint/parser": "^1.11.0"
+    "@typescript-eslint/parser": "^1.11.0",
+    "react-router-dom": "^5.0.1"
   }
 }

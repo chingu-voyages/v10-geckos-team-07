@@ -4,8 +4,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
+import { Link } from "react-router-dom";
+
 import SingUp from "./SignUp";
 import SignIn from "./SignIn";
+
 
 const handleOnChange = e => {
   //let search value = e.target.value
@@ -32,15 +35,15 @@ const Menu = () => {
           </Button>
         </Form>
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Become a Host</Nav.Link>
-          <Nav.Link href="#saved">Saved</Nav.Link>
-          <Nav.Link href="#trips">Trips</Nav.Link>
-          <Nav.Link href="#messages">Messages</Nav.Link>
-          <Nav.Link href="#help">Help</Nav.Link>
+          <Nav.Link> <Link to="/">Become a host</Link></Nav.Link>
+          <Nav.Link> <Link to="/saved">Saved</Link></Nav.Link>
+          <Nav.Link> <Link to="/trips/">Trips</Link></Nav.Link>
+          <Nav.Link > <Link to="/messages/">Messages</Link></Nav.Link>
+          <Nav.Link > <Link to="/help/">Help</Link></Nav.Link>
           <Nav.Link ><SingUp /></Nav.Link>
           <Nav.Link ><SignIn /> </Nav.Link>
-        
         </Nav>
+
       </Navbar>
     </>
   );
